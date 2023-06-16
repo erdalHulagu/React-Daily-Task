@@ -1,8 +1,8 @@
 import React from 'react';
-import Card from 'react-bootstrap/Card';
+import {Card , Button } from 'react-bootstrap';
 
 const CardId = (props) => {
-  const { id, first_name, last_name, email, avatar } = props;
+  const { id, first_name, last_name, email, avatar, deleteCard } = props;
   return (
     <div>
       <Card className='h-100'>
@@ -11,6 +11,7 @@ const CardId = (props) => {
           <Card.Title>{id} </Card.Title>
           <Card.Title>{first_name} {last_name}</Card.Title>
           <Card.Subtitle>{email}</Card.Subtitle>
+          <Button variant="danger" onClick={()=>deleteCard(id)}>Delete</Button>
         </Card.Body>
       </Card>
     </div>
