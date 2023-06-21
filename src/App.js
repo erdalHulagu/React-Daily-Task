@@ -3,6 +3,7 @@
 // import CountriesFilter from "./components/countries/coutries-filter";
 import Cards from "./components/card/cards";
 import Login from "./form-control/login";
+import Register from "./form-control/register";
 
 
 
@@ -12,7 +13,8 @@ const App=()=> {
       {/* <CountriesTable/> */}
       {/* <CountriesFilter/> */}
       {/* <Cards/> */}
-      <Login/>
+      {/* <Login/> */}
+      <Register/>
     </div>
   );
 }
